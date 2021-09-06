@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special: 新規メンバー募集 | POSSE</title>
+    <link rel="stylesheet" href="../css/recet.css">
+    <link rel="stylesheet" href="../css/posse-promotion.css">
+</head>
+
+<body>
+    <!-- 固定する系の要素 by jin --> 
+    <div class="fixed_line_icon" id="fixedLineIcon">
+       <a href="https://liff.line.me/1645278921-kWRPP32q?openerPlatform=native&openerKey=urlSchema%3Aexternal&accountId=651htnqp#mst_challenge=F87CvM4Gr6ugV6EcQaOu0H3Z5MZ6R7a2xNohpFE95EI">
+           <svg aria-hidden="true" data-prefix="fab" data-icon="line" role="img" xmlns="http://www.w3.org/2000/svg"
+               viewBox="0 0 448 512" class="svg-line">
+               <path fill="white"
+                   d="M272.1 204.2v71.1c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.1 0-2.1-.6-2.6-1.3l-32.6-44v42.2c0 1.8-1.4 3.2-3.2 3.2h-11.4c-1.8 0-3.2-1.4-3.2-3.2v-71.1c0-1.8 1.4-3.2 3.2-3.2H219c1 0 2.1.5 2.6 1.4l32.6 44v-42.2c0-1.8 1.4-3.2 3.2-3.2h11.4c1.8-.1 3.3 1.4 3.3 3.1zm-82-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 1.8 1.4 3.2 3.2 3.2h11.4c1.8 0 3.2-1.4 3.2-3.2v-71.1c0-1.7-1.4-3.2-3.2-3.2zm-27.5 59.6h-31.1v-56.4c0-1.8-1.4-3.2-3.2-3.2h-11.4c-1.8 0-3.2 1.4-3.2 3.2v71.1c0 .9.3 1.6.9 2.2.6.5 1.3.9 2.2.9h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.7-1.4-3.2-3.1-3.2zM332.1 201h-45.7c-1.7 0-3.2 1.4-3.2 3.2v71.1c0 1.7 1.4 3.2 3.2 3.2h45.7c1.8 0 3.2-1.4 3.2-3.2v-11.4c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2V234c0-1.8-1.4-3.2-3.2-3.2H301v-12h31.1c1.8 0 3.2-1.4 3.2-3.2v-11.4c-.1-1.7-1.5-3.2-3.2-3.2zM448 113.7V399c-.1 44.8-36.8 81.1-81.7 81H81c-44.8-.1-81.1-36.9-81-81.7V113c.1-44.8 36.9-81.1 81.7-81H367c44.8.1 81.1 36.8 81 81.7zm-61.6 122.6c0-73-73.2-132.4-163.1-132.4-89.9 0-163.1 59.4-163.1 132.4 0 65.4 58 120.2 136.4 130.6 19.1 4.1 16.9 11.1 12.6 36.8-.7 4.1-3.3 16.1 14.1 8.8 17.4-7.3 93.9-55.3 128.2-94.7 23.6-26 34.9-52.3 34.9-81.5z">
+               </path>
+           </svg>
+       </a>
+   </div>
+    <!-- ロード時に表示 -->
+    <div id="firstViewLoading">
+        <div class="first_view_loading_img">
+            <img src="../img/first-view-text.png" alt="読み込み中に表示">
+        </div>
+    </div>
+
+    <!-- header -->
+    <header>
+        <div class="header_logo_container">
+            <a href="./index.html"><img class="header_logo" src="../img/posse_logo.png" alt="ヘッダーポッセロゴ"></a>
+        </div>
+        <ul class="header_menu is_show" id="headerMenu">
+
+            <li class="header_top header_hover"><a href="./index.html">Top</a></li>
+            <li><a href="./about-us.html">About Us</a></li>
+            <li><a href="./activity.html">Activity</a></li>
+            <li><a href="./faq.html">保護者の方へ・よくある質問</a></li>
+            <li><a href="https://posse.anti-pattern.co.jp/">POSSE公式サイト</a></li>
+        </ul>
+    </header>
+    <div class="menu_btn_container" id="menuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- popup menu -->
+    <aside class="menu_container" id="menuContainer">
+        <ul class="menu_links">
+            <li><a class="each_menu_link" href="./index.html">Top</a></li>
+            <li><a class="each_menu_link" href="./about-us.html">About Us</a></li>
+            <li><a class="each_menu_link" href="./activity.html">Activity</a></li>
+            <li><a class="each_menu_link" href="./faq.html">保護者の方へ・よくある質問</a></li>
+            <li><a class="each_menu_link" href="https://posse.anti-pattern.co.jp/">POSSE公式サイト</a></li>
+        </ul>
+        <ul class="menu_sns_links">
+            <li>
+                <a href="https://instagram.com/posse_programming?utm_medium=copy_link">
+                    <img class="menu_instagram_link" src="../img/instagram_logo_img.png" alt="インスタロゴ">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/posse_program?s=20">
+                    <img class="menu_twitter_link" src="../img/2021 Twitter logo - blue.png" alt="ツイッターロゴ">
+                </a>
+            </li>
+            <li>
+                <a href="https://lin.ee/sQdqKjf">
+                    <img class="menu_line_link" src="../img/LINE_Brand_icon.png" alt="ラインロゴ">
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- top page first view -->
+    <section>
+        <div class="first_view_contain">
+            <div class="first_view_text">
+                <img src="https://fontmeme.com/permalink/210904/ebee2e8182466e95a0fe895abf665b74.png"
+                    alt="rainbow-saturday-font">
+            </div>
+
+            <div class="first_view_contain">
+                <div class="first_view_big_contain">
+                    <img class="first_view_big" src="../img/firstview_big.JPG" alt="ファーストビュー大">
+                    <img class="first_view_small" src="../img/firstview_small.JPG" alt="ファーストビュー小">
+                </div>
+                <div class="background">
+                    <div class="background_inner"></div>
+                </div>
+    </section>
+
+    <div class="top_first_view_line">
+        <p>最新情報はラインで配信致します</p>
+        <button><a href="https://lin.ee/sQdqKjf">友達追加はこちらから</a></button>
+    </div>
+
+    <div class="top_slide_contain">
+        <ul class="slideshow_from_right">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large0.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large1.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large2.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large3.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large4.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+        <ul class="slideshow_from_right">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large0.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large1.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large2.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large3.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large4.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+        <ul class="slideshow_from_right">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large0.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large1.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large2.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large3.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large4.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+    </div>
+
+    <div class="top_slide_contain">
+        <ul class="slideshow_from_left">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large5.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large6.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large7.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large8.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large9.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+        <ul class="slideshow_from_left">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large5.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large6.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large7.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large8.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large9.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+        <ul class="slideshow_from_left">
+            <li><img class="slideshow_imgs" src="../img/top-slide-large5.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large6.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large7.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large8.jpg" alt="流れるスライド用画像"></li>
+            <li><img class="slideshow_imgs" src="../img/top-slide-large9.jpg" alt="流れるスライド用画像"></li>
+        </ul>
+    </div>
+
+    <!-- main contents -->
+    <section class="main_contents_spacer" id="mainContentsSpacer">
+        <div class="main_contents_wrapper">
+            <!-- 1 -->
+            <div class="top_contents_title" id="mainContent1">
+                <h2>Members wanted.</h2>
+                <h3>新規メンバー募集中</h3>
+            </div>
+            <div class="after_title">
+                <h2>Members<br>wanted.</h2>
+            </div>
+            <article class="main_article">
+                POSSEでは年2回、6月と11月に新規メンバーを募集しています。
+            </article>
+            <img src="../img/main-contents1.jpg">
+            <img src="../img/main-contents2.jpg">
+
+            <!-- 2 -->
+            <div class="top_contents_title" id="mainContent2">
+                <h2>What's POSSE?</h2>
+                <h3>POSSEとは</h3>
+            </div>
+            <div class="after_title">
+                <h2>What's<br>POSSE?</h2>
+            </div>
+            <article class="main_article">
+                学生プログラミングコミュニティ「POSSE(ポッセ)」は、未経験からチーム学習・チーム開発を行い技術の習得と実践経験を積んでいきます。<br>POSSE独自の活動を通してプログラミング技術の向上と共に、人格面での成長を目指しています。
+            </article>
+            <img src="../img/main-contents3.jpg">
+            <img src="../img/main-contents4.jpg">
+
+            <!-- 3 -->
+            <div class="top_contents_title" id="mainContent3">
+                <h2>Why POSSE?</h2>
+                <h3>POSSEが選ばれる理由</h3>
+            </div>
+            <div class="after_title">
+                <h2>Why<br>POSSE?</h2>
+            </div>
+            <article class="main_article">
+                POSSEではメンバーの人格的成長をプログラミングスキルの向上と同等に重んじています。これはソフトウェアエンジニアに限らず、将来社会の一員として生きていくために必要不可欠なものだからです。POSSEでは定期的に「7つの習慣」というビジネス本を用いたワークショップを行い、人格についてんお理解を深めています。<br>さらにPOSSEではプロのエンジニアが組んだカリキュラムのもと、学生同士学び合い教え合いながらプログラミングスキルの習得を目指します。そのため、通常のスクールよりはるかに安価に技術習得が可能です。
+            </article>
+            <img src="../img/main-contents5.jpg">
+            <img src="../img/main-contents6.jpg">
+        </div>
+    </section>
+    <img src="../img/LINEqrcode.png" alt="LINEのQRコード" class="main_article_line">
+    <!-- flow -->
+    <section>
+        <h2 class="top_entry_subtitle top_entry_animation">入会までの流れ</h2>
+
+        <li class="top_entry_point top_entry_mark top_entry_animation">
+            <div class="top_entry_flow">
+                <p class="top_entry_overview">POSSEのLINE公式アカウントを追加</a></p>
+                <img class="top_entry_line_logo" src="../img/LINEqrcode.png" alt="LINEのQRコード">
+                <p class="top_entry_detail">まずはPOSSEのLINE公式アカウントを追加していただき、個人チャットにて説明会等の詳細をお送り致します。</p>
+            </div>
+        </li>
+
+
+        <li class="top_entry_point top_entry_mark top_entry_animation">
+            <div class="top_entry_flow">
+                <p class="top_entry_overview"> IT業界キャリア説明会</p>
+                <p class="top_entry_detail">プロのキャリアコンサルタントの方から、IT業界のリアルな現状・キャリアについての話を聞くことができます。</p>
+            </div>
+        </li>
+
+
+        <li class="top_entry_point top_entry_mark top_entry_animation">
+            <div class="top_entry_flow">
+                <p class="top_entry_overview"> POSSE説明会</p>
+                <p class="top_entry_detail">POSSEの活動や入会の詳細などについて説明します。</p>
+            </div>
+        </li>
+
+        <li class="top_entry_point top_entry_mark top_entry_animation">
+            <div class="top_entry_flow">
+                <p class="top_entry_overview"> セットアップ会</p>
+                <p class="top_entry_detail">『7つの習慣』という自己啓発本の一部を読み、ディスカッションを行います。</p>
+            </div>
+        </li>
+
+        <li class="top_entry_point top_entry_mark top_entry_animation">
+            <div class="top_entry_flow">
+                <p class="top_entry_overview"> POSSE入会</p>
+                <p class="top_entry_detail">11月6日の入学式をもってPOSSE入会となります。</p>
+            </div>
+        </li>
+
+        <div class="top_entry_official top_entry_animation">
+            <p class="top_entry_recommend">まずはLINE公式アカウントを追加！</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer_links">
+            <p class="footer_text_posse">POSSE</p>
+
+            <ul class="footer_site_map_contain">
+                <li><a class="footer_site_map" href="./index.html">Top</a></li>
+                <li><a class="footer_site_map" href="./about-us.html">About Us</a></li>
+                <li><a class="footer_site_map" href="./activity.html">Activity</a></li>
+                <li><a class="footer_site_map" href="./faq.html">保護者の方へ・よくある質問</a></li>
+            </ul>
+            <ul class="footer_site_map_contain">
+                <li><a class="footer_site_map" href="https://posse.anti-pattern.co.jp/">POSSE公式サイト</a></li>
+                <li><a class="footer_site_map" href="https://anti-pattern.co.jp/company/">株式会社アンチパターン Anti-Pattern
+                        Inc.</a></li>
+                <li><a class="footer_site_map" href="https://harbors.anti-pattern.co.jp/">HarborS 表参道</a></li>
+            </ul>
+            <ul class="footer_sns_links">
+                <li><a href="https://instagram.com/posse_programming?utm_medium=copy_link"><img class="footer_instagram"
+                            src="../img/instagram_logo_img.png" alt="インスタロゴ"></a></li>
+                <li><a href="https://twitter.com/posse_program?s=20"><img class="footer_twitter"
+                            src="../img/2021 Twitter logo - blue.png" alt="ツイッターロゴ"></a></li>
+                <li><a href="https://lin.ee/sQdqKjf"><img class="footer_line" src="../img/LINE_Brand_icon.png"
+                            alt="ラインロゴ"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/posse-promotion.js"></script>
+    <script src="../js/animation.js"></script>
+</body>
+
+</html>

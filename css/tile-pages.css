@@ -1,0 +1,158 @@
+.title {
+  display: inline-block;
+  margin: 100px;
+  text-align: center;
+  color: rgb(43, 43, 43);
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  border-bottom: solid 2px rgb(43, 43, 43);
+}
+
+@media screen and (min-width: 481px) {
+  .lineUpBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+  .pictureBox {
+    width: 550px;
+    height: 280px;
+    margin: 25px;
+    position: relative;
+  }
+  .picture {
+    width: 550px;
+    height: 250px;
+    cursor: pointer;
+  }
+  .letter {
+    margin: 0;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;
+    font-family: serif;
+    font-size: 15px;
+    text-shadow: 1px 2px black;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .lineUpBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .pictureBox {
+    width: 300px;
+    height: 182px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+  }
+  .picture {
+    width: 300px;
+    height: 182px;
+    cursor: pointer;
+  }
+  .letter {
+    margin: 0;
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    color: white;
+    font-family: serif;
+    font-size: 18px;
+    text-shadow: 1px 2px black;
+    font-weight: bold;
+  }
+}
+
+.backColor {
+  background-color: black;
+  box-shadow: 0 10px 25px 0 rgba(.5, .5, .5, .5);
+}
+
+.backColor img:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+/* popup */
+
+.popup {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.popup_inner {
+  display: flex;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 86%;
+  height: 70%;
+  z-index: 3;
+}
+
+.show_popup {/* このクラスを付与した要素はみえるようになる */
+  visibility: visible;
+  /* 要素をみえるようにする */
+  opacity: 1;
+  /* 不透明度最大 */
+}
+
+.popup_picture_div {
+  width: 45%;
+  height: 86%;
+  margin: 4%;
+}
+
+.popup_picture {
+  width: 100%;
+  height: 100%;
+}
+
+.popup_inner_contain {
+  width: 45%;
+  height: 86%;
+  margin: 4%;
+  word-wrap:break-all;
+}
+
+.popup_inner_sentence {
+  padding: 4%;
+  font-size: 25px;
+  line-height: 2;
+  font-family: serif;
+  
+}
+
+.popup_back_button {
+  margin-left: 25%;
+  padding: 6%;
+  font-size: 18px;
+  line-height: 2;
+  font-family: serif;
+  color: gray;
+}
+
+.popup_back_button:hover {
+  cursor: pointer;
+  color: black;
+}

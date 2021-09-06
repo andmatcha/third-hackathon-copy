@@ -1,0 +1,1068 @@
+@charset "utf-8";
+/* asaka-zone */
+
+header {
+    width: 100%;
+    padding: 10px 5px 10px;
+    background-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: 600;
+}
+
+header ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.header_logo_container {
+    height: 60px;
+    flex-grow: 3;
+}
+
+.header_logo {
+    margin: 0;
+    padding: 0;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.header_menu {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    padding-right: 70px;
+}
+
+
+.header_hover{
+    padding: 5px;
+    border-bottom: 2px solid #333;
+}
+/*ハンバーガーボタン*/
+
+.menu_btn_container span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    left: 6px;
+    background: #555;
+}
+
+.menu_btn_container span:nth-child(1) {
+    top: 10px;
+}
+
+.menu_btn_container span:nth-child(2) {
+    top: 20px;
+}
+
+.menu_btn_container span:nth-child(3) {
+    top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+
+.menu_btn_container.active {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.menu_btn_container.active span:nth-child(1) {
+    top: 16px;
+    left: 6px;
+    background: #000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.menu_btn_container.active span:nth-child(2) {
+    top: 16px;
+    background: #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.menu_btn_container.active span:nth-child(3) {
+    opacity: 0;
+}
+
+
+.menu_links {
+    padding:7% 2%;   
+}
+
+.each_menu_link {
+    font-family: serif;
+    padding: 5px;
+    margin: 0;
+    
+}
+
+/* asaka-kokomade */
+
+.first_view_small {
+    position: absolute;
+    top: 400px;
+    left: 700px;
+    z-index: 20;
+    width: 35%;
+    animation-name: fadeInAnime;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    opacity: 0;
+}
+
+@keyframes fadeInAnime {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.75;
+    }
+}
+
+.top_first_view_line {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+
+.top_first_view_line a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+}
+
+
+.slideshow_from_right {
+    display: flex;
+    animation: loop-slide 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.slideshow_from_left {
+    display: flex;
+    animation: loop-slide_from_left 20s infinite linear 1s both;
+}
+
+@keyframes loop-slide_from_left {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.top_contents {
+    background-color: rgba(202, 190, 167, 0.5);
+    margin: 50px 0;
+    padding: 0 30px 15px;
+    text-align: center;
+    line-height: 2em;
+}
+
+.top_contents h2 {
+    font-size: 40px;
+    line-height: 2;
+    font-family: serif;
+}
+
+.top_contents h3 {
+    font-size: 15px;
+    color: #555;
+    margin: -25px 0 0;
+    font-family: serif;
+}
+
+/* test */
+
+.main_contents_spacer {
+    display: block;
+    height: 6000px;
+}
+.main_contents_wrapper {
+    position: relative;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.top_contents_title {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 190, 167);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 2em;
+    position: absolute;
+    transition: opacity 0.5s ease;
+    z-index: 300;
+}
+
+.top_contents_title h2 {
+    font-size: 40px;
+    line-height: 2em;
+    font-family: serif;
+}
+.top_contents_title h3 {
+    font-size: 15px;
+    color: #555;
+    margin: -25px 0 0;
+    font-family: serif;
+}
+
+.after_title {
+    position: absolute;
+    width: 130px;
+    height: 100px;
+    background-color: rgba(202, 190, 167, 0.8);
+    align-items: center;
+    z-index: 200;
+}
+.after_title h2 {
+    margin-top: 25px;
+    font-size: 30px;
+    line-height: 1em;
+    font-family: serif;
+}
+
+.main_article {
+    position: absolute;
+    box-sizing: border-box;
+    width: 50vw;
+    height: 60vh;
+    padding: 30px;
+    background-color: #ddc9c6;
+    z-index: 200;
+    font-family: serif;
+    font-size: 15px;
+    line-height: 25px;
+    overflow: scroll;
+}
+
+.main_article_line {
+    position: absolute;
+    bottom: -2373px;
+    left: 667px;
+    width: 120px;
+    height: 120px;
+    z-index: 400;
+}
+
+/* １個１個の位置 */
+.main_contents_wrapper div:nth-of-type(1) {
+    top: 0;
+    left: 0;
+}
+.main_contents_wrapper div:nth-of-type(2) {
+    top: 1100px;
+    left: 0;
+}
+.main_contents_wrapper article:nth-of-type(1) {
+    top: 1000px;
+    left: 40%;
+}
+
+.main_contents_wrapper div:nth-of-type(3) {
+    top: 2000px;
+    left: 0;
+}
+.main_contents_wrapper div:nth-of-type(4) {
+    top: 3100px;
+    left: 0;
+}
+.main_contents_wrapper article:nth-of-type(2) {
+    top: 3170px;
+    left: 25%;
+}
+
+.main_contents_wrapper div:nth-of-type(5) {
+    top: 4000px;
+    left: 0;
+}
+.main_contents_wrapper div:nth-of-type(6) {
+    top: 5100px;
+    left: 0;
+}
+.main_contents_wrapper article:nth-of-type(3) {
+    top: 5000px;
+    left: 40%;
+}
+/* 画像 */
+.main_contents_wrapper img {
+    position: absolute;
+    width: 40vw;
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.main_contents_wrapper img:nth-of-type(1) {
+    top: 1050px;
+    left: 2%;
+}
+.main_contents_wrapper img:nth-of-type(2) {
+    top: 1360px;
+    right: 3%;
+}
+.main_contents_wrapper img:nth-of-type(3) {
+    top: 2940px;
+    left: 12%;
+}
+.main_contents_wrapper img:nth-of-type(4) {
+    top: 3395px;
+    right: -5%;
+}
+.main_contents_wrapper img:nth-of-type(5) {
+    top: 5150px;
+    left: 4%;
+}
+.main_contents_wrapper img:nth-of-type(6) {
+    top: 5420px;
+    right: 7%;
+    width: 20vw;
+}
+
+.show_odd_images {
+    transform: translateX(5%);
+    visibility: visible !important;
+    opacity: 0.7 !important;
+}
+.show_even_images {
+    transform: translateX(-5%);
+    visibility: visible !important;
+    opacity: 0.7 !important;
+}
+
+/* jsでつけ外し */
+.fix_box {
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+}
+.transform_box {
+    left: -400px;
+    opacity: 0;
+}
+
+/* test kokomade */
+
+/* Rena Zone */
+
+.top_entry_subtitle {
+    margin: 10%;
+    text-align: center;
+    font-size: 30px;
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #4169e1;
+}
+
+.top_entry_point {
+    margin-left: 5%;
+    margin-bottom: 2%;
+}
+
+.top_entry_mark {
+    list-style-type: square;
+}
+
+.top_entry_flow {
+    border-left: 3px solid skyblue;
+    padding-left: 10px;
+}
+
+.top_entry_overview {
+    font-family: serif;
+    font-size: 20px;
+}
+
+.top_entry_line_logo {
+    margin-top: 5%;
+    margin-left: 32%;
+    width: 30%;
+}
+
+.top_entry_detail {
+    font-family: serif;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.top_entry_official {
+    text-align: center;
+    margin: 100px 0;
+}
+
+/* rena zone */
+
+.top_entry_recommend {
+    font-size: 50px;
+    width: 50%;
+    color: red;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: serif;
+    font-weight: bold;
+}
+
+.top_entry_animation {
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: translateY(30px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+footer {
+    width: 100%;
+    background-color: #9a9389;
+}
+
+.footer_site_map {
+    color: white;
+    font-family: serif;
+    
+}
+
+
+/* 固定LINEアイコン */
+.fixed_line_icon {
+    position: fixed;
+    visibility: hidden;
+    width: 100px;
+    height: 100px;
+    right: 5vw;
+    bottom: 5vh;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #a4a098;
+    border-radius: 50%;
+    border: solid 1px #fff;
+    z-index: 499;
+}
+
+.fixed_line_icon a {
+    display: block;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 24%;
+    left: 28%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* レスポンシブ */
+@media screen and (min-width: 481px) {
+    .menu_btn_container {
+        display: block;
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        transition: 0.5s all;
+        cursor: pointer;
+        z-index: 700;
+    }
+    aside.menu_container .menu_links {
+        margin: 0 auto;
+        padding-left: 30px;
+        width: 100%;
+    }
+    aside.menu_container .menu_links li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        transition: .4s all;
+    }
+    aside.menu_container ul li:last-child {
+        padding-bottom: 0;
+    }
+    .each_menu_link:hover {
+        color: gray;
+    }
+    aside.menu_container ul li a {
+        display: block;
+        margin: 10px 0;
+        padding: 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 30px;
+        line-height: 2em;
+    }
+
+    aside.menu_container {
+        position: fixed;
+        z-index: 500;
+        top: 0px;
+        right: 0;
+        background: rgba(255, 255, 255, 1);
+        text-align: left;
+        width: 40%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+
+    .menu_sns_links {
+        display: flex;
+        margin: 0 0 0 10%;
+    }
+
+    .menu_instagram_link {
+        max-width: 60px;
+        margin: 20px 0 0 60px;
+    }
+    .menu_twitter_link {
+        max-width: 60px;
+        margin: 20px 0 0 60px;
+    }
+    .menu_line_link {
+        max-width: 60px;
+        margin: 20px 0 0 60px;
+    }
+
+    
+    #firstViewLoading {
+        width: 100vw;
+        height: 100vh;
+        transition: all 1s;
+        background-color:white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9000;
+    }
+    
+    .first_view_loading_img img {
+        width: 80%;
+        margin: 50px 0 200px 100px;
+        animation: loading 2.0s;
+    }
+    
+    @keyframes loading {
+        0% {
+            transform: scale(0);
+        } 100% {
+            transform: scale(1.0);
+            opacity: 0.8;
+        }
+    }
+    
+    .loaded_img {
+        animation: fadeOutAnime 1.0s ;
+        opacity: 0; 
+        visibility: hidden;
+    }
+    
+    @keyframes fadeOutAnime {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    div.background {
+        margin: 70px auto 0 auto;
+        width: 100vw;
+        height: 800px;
+        position: relative;
+    }
+
+    div.background_inner {
+        background-color: #e5e2df;
+        width: 70%;
+        height: 80%;
+        top: 70px;
+        left: 140px;
+        margin: 0 auto;
+        position: absolute;
+        animation-name: fadeInAnime;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        opacity: 0;
+    }
+
+    .first_view_big {
+        position: absolute;
+        top: 100px;
+        left: 200px;
+        z-index: 10;
+        width: 50%;
+        animation-name: fadeInAnime;
+        animation-duration: 3s;
+        animation-fill-mode: both;
+        opacity: 0;
+    }
+    
+    @keyframes fadeInAnime {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.8;
+        }
+    }
+
+    .first_view_text {
+        position: absolute;
+        top: 610px;
+        left: 300px;
+        z-index: 30;
+        animation-name: fadeInAnime;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        opacity: 0;
+    }
+
+    .first_view_text img {
+        width: 130%;
+    }
+
+    
+    @keyframes fadeInAnime {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.8;
+        }
+    }
+
+
+    .top_first_view_line p {
+        color: #6f4b3e;
+        font-family: serif;
+        font-size:x-large;
+        margin-bottom: 2%;
+    }
+    
+    .top_first_view_line button {
+        margin-left: 35%;
+        border-radius: 50px;
+        padding: 2%;
+        font-family: serif;
+        font-size: xx-large;
+        font-weight: 900;
+        background-color: #6F4B3E;
+        width: 30%;
+    }
+    
+    
+    
+    /* このクラスを、jQueryで付与・削除する */
+    aside.menu_container.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .slideshow_imgs {
+        width: 400px;
+        height: 300px;
+    }
+
+    .top_slide_contain {
+        display: flex;
+        align-items: center;
+        height: 340px;
+        overflow: hidden;
+    }
+
+    /* footer CSS */
+    .footer_text_posse {
+        padding-top: 10px;
+        margin: 0 0 0 10%;
+        text-align: center;
+        font-family: serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer_site_map_contain {
+        margin: 20px 0 20px 5%;
+    }
+
+    .footer_links {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        line-height: 2;
+    }
+
+    .footer_sns_links {
+        display: flex;
+        margin: 0;
+    }
+
+    .footer_instagram {
+        max-width: 60px;
+        margin: 20px 0 0 60px;
+    }
+    
+    .footer_twitter {
+        max-width: 60px;
+        margin: 20px 0 0 60px;
+    }
+    
+    .footer_line {
+        max-width: 60px;
+        margin: 20px 0 20px 60px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+        align-items: center;
+    }
+
+    header {
+        display: none;
+    }
+
+/* ハンバーガーの時 */
+    .menu_btn_container {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        position: fixed;
+        right: 13px;
+        top: 12px;
+        width: 42px;
+        height: 42px;
+        cursor: pointer;
+        text-align: center;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        transition: 0.5s all;
+        cursor: pointer;
+        z-index: 700;
+    }
+
+    aside.menu_container {
+        position: fixed;
+        z-index: 500;
+        top: 0px;
+        right: 0;
+        background: rgba(255, 255, 255, 1);
+        text-align: left;
+        width: 55%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .6s ease, visibility .6s ease;
+    }
+
+    .menu_links {
+        margin-top: 40%;
+    }
+
+    aside.menu_container ul {
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+    }
+    /* aside.menu_container {
+        display: none;
+    } */
+
+    aside.menu_container ul li {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        transition: .4s all;
+    }
+    
+    aside.menu_container ul li:last-child {
+        padding-bottom: 0;
+    }
+    aside.menu_container ul li:hover {
+        background: #ddd;
+    }
+    aside.menu_container ul li a {
+        display: block;
+        margin: 10px 0;
+        padding: 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 18px;
+        line-height: 3;
+    }
+    /* このクラスを、jQueryで付与・削除する */
+    aside.menu_container.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu_sns_links {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .menu_instagram_link {
+        max-width: 60px;
+        margin: 0;
+    }
+    .menu_twitter_link {
+        max-width: 60px;
+        margin: 0;
+    }
+    .menu_line_link {
+        max-width: 60px;
+        margin: 0;
+    }
+
+    #firstViewLoading {
+        width: 100vw;
+        height: 100vh;
+        transition: all 1s;
+        background-color:white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9000;
+    }
+    
+    .first_view_loading_img img {
+        width: 80%;
+        margin-top: 20%;
+        margin-left: 7%;
+        animation: loading 2.0s;
+    }
+    
+    @keyframes loading {
+        0% {
+            transform: scale(0);
+        } 100% {
+            transform: scale(1.0);
+            opacity: 0.8;
+        }
+    }
+    
+    .loaded_img {
+        animation: fadeOutAnime 1.0s ;
+        opacity: 0; 
+        visibility: hidden;
+    }
+    
+    @keyframes fadeOutAnime {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+
+    div.background {
+        width: max-content;
+        margin: 0;
+        height: 400px;
+        text-align: center;
+    }
+
+    div.background_inner {
+        background-color: #e5e2df;
+        width: 70%;
+        height: 30%;
+        top: 70px;
+        left: 10%;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+    .first_view_big {
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        z-index: 10;
+        width: 65%;
+        animation-name: fadeInAnime;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        opacity: 0;
+    }
+    
+    @keyframes fadeInAnime {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 0.8;
+        }
+    }
+    .first_view_small {
+        display: none;
+    }
+
+    .first_view_text {
+        position: absolute;
+        top: 280px;
+        left: 160px;
+        z-index: 30;
+        animation-name: fadeInAnime;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        opacity: 0;
+    }
+
+    .first_view_text img {
+        width: 60%;
+    }
+    @keyframes fadeInAnime {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .top_first_view_line p {
+        color: #6f4b3e;
+        font-family: serif;
+        font-size: large;
+        margin-bottom: 2%;
+    }
+    
+    .top_first_view_line button {
+        margin-left: 15%;
+        border-radius: 50px;
+        padding: 2%;
+        font-family: serif;
+        font-size: 20px;
+        font-weight: 900;
+        background-color: #6F4B3E;
+        width: 70%;
+    }
+    
+    
+
+    .slideshow_imgs {
+        width: 133px;
+        height: 100px;
+    }
+
+    .top_slide_contain {
+        display: flex;
+        align-items: center;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .footer_text_posse {
+        padding-top: 10px;
+        margin: 0;
+        text-align: center;
+        font-family: serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .footer_site_map_contain {
+        margin: 10px;
+        text-align: center;
+    }
+
+    .footer_links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_sns_links {
+        display: flex;
+        margin: 0 0 0 18%;
+    }
+
+    .footer_instagram {
+        max-width: 60px;
+        margin: 10px 20px;
+    }
+    
+    .footer_twitter {
+        max-width: 60px;
+        margin: 10px 20px;
+    }
+    
+    .footer_line {
+        max-width: 60px;
+        margin: 10px 20px;
+    }
+}
+
+.is_show {
+    visibility: visible;
+    opacity: 1;
+}
